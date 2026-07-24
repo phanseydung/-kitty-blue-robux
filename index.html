@@ -1,5 +1,4 @@
-
-            <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="km">
 <head>
     <meta charset="UTF-8">
@@ -108,12 +107,16 @@
             align-items: center;
         }
 
-        .game-card img {
+        .game-icon-box {
             width: 65px;
             height: 65px;
             border-radius: 14px;
-            object-fit: cover;
+            background: #bce0fd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-bottom: 6px;
+            box-shadow: inset 0 0 5px rgba(255,255,255,0.5);
         }
 
         .game-name {
@@ -128,7 +131,7 @@
             background: #7bb5e3;
             color: #fff;
             border: none;
-            padding: 5px;
+            padding: 6px 0;
             border-radius: 20px;
             font-size: 10px;
             font-weight: 700;
@@ -172,19 +175,37 @@
             border-radius: 14px;
             padding: 10px;
             width: 47%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .qr-card img {
+        .qr-header {
+            background: #e21a1a;
+            color: white;
             width: 100%;
-            border-radius: 10px;
-            object-fit: contain;
+            padding: 4px;
+            border-radius: 6px 6px 0 0;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        .qr-box {
+            background: white;
+            padding: 8px;
+            border-radius: 0 0 6px 6px;
+            border: 1px solid #ddd;
+            width: 100%;
+            display: flex;
+            justify-content: center;
         }
 
         .qr-card-label {
             font-size: 11px;
             font-weight: bold;
             color: #3b7ca8;
-            margin-top: 6px;
+            margin-top: 8px;
         }
     </style>
 </head>
@@ -221,21 +242,27 @@
     <div class="games-grid">
         <!-- Roblox -->
         <div class="game-card">
-            <img src="roblox.png" alt="Roblox" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/phanseydung/-kitty-blue-robux/main/roblox.png';">
+            <div class="game-icon-box" style="background: #aed9e0;">
+                <span style="font-size: 28px;">🎀</span>
+            </div>
             <div class="game-name">Roblox</div>
             <button class="btn-topup">TOPUP</button>
         </div>
 
         <!-- MLBB -->
         <div class="game-card">
-            <img src="mlbb.png" alt="MLBB" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/phanseydung/-kitty-blue-robux/main/mlbb.png';">
+            <div class="game-icon-box" style="background: #9bc5ea;">
+                <span style="font-size: 22px; font-weight: bold; color: white;">MLBB</span>
+            </div>
             <div class="game-name">MLBB (KH)</div>
             <button class="btn-topup">TOPUP</button>
         </div>
 
         <!-- Free Fire -->
         <div class="game-card">
-            <img src="freefire.png" alt="Free Fire" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/phanseydung/-kitty-blue-robux/main/freefire.png';">
+            <div class="game-icon-box" style="background: #87ceeb;">
+                <span style="font-size: 20px; font-weight: bold; color: white;">FF</span>
+            </div>
             <div class="game-name">FreeFire</div>
             <button class="btn-topup">TOPUP</button>
         </div>
@@ -247,17 +274,25 @@
         <div class="qr-sub">គណនី៖ <b>Phan duong</b> (TrueMoney KHQR)</div>
         
         <div class="qr-container">
+            <!-- USD QR -->
             <div class="qr-card">
-                <img src="qr-usd.png" alt="USD QR" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/phanseydung/-kitty-blue-robux/main/qr-usd.png';">
+                <div class="qr-header">KHQR</div>
+                <div class="qr-box">
+                    <i class="fa-solid fa-qrcode" style="font-size: 80px; color: #222;"></i>
+                </div>
                 <div class="qr-card-label">💵 ប្រាក់ដុល្លារ ($ USD)</div>
             </div>
 
+            <!-- KHR QR -->
             <div class="qr-card">
-                <img src="qr-khr.png" alt="KHR QR" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/phanseydung/-kitty-blue-robux/main/qr-khr.png';">
+                <div class="qr-header">KHQR</div>
+                <div class="qr-box">
+                    <i class="fa-solid fa-qrcode" style="font-size: 80px; color: #222;"></i>
+                </div>
                 <div class="qr-card-label">៛ ប្រាក់រៀល (៛ KHR)</div>
             </div>
         </div>
     </div>
 
 </body>
-</html
+</html>
