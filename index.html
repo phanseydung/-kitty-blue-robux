@@ -17,7 +17,7 @@
         }
 
         body {
-            background-color: #f8f9fa;
+            background-color: #f0f4f9;
             color: #333;
             padding-bottom: 30px;
         }
@@ -38,7 +38,7 @@
         .logo-text {
             font-size: 16px;
             font-weight: 700;
-            color: #1a73e8;
+            color: #1e88e5;
         }
 
         .logo-subtext {
@@ -50,11 +50,11 @@
         .header-icons {
             display: flex;
             gap: 15px;
-            color: #555;
+            color: #1e88e5;
             font-size: 16px;
         }
 
-        /* Banner */
+        /* Banner (Blue Theme) */
         .banner-slider {
             width: 100%;
             margin: 10px 0;
@@ -62,7 +62,7 @@
         }
 
         .banner-content {
-            background: linear-gradient(135deg, #FFD93D, #FF6B6B);
+            background: linear-gradient(135deg, #0d47a1, #1e88e5, #42a5f5);
             border-radius: 12px;
             height: 140px;
             display: flex;
@@ -71,7 +71,7 @@
             color: white;
             font-weight: bold;
             font-size: 18px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(30, 136, 229, 0.2);
         }
 
         /* Section Title */
@@ -82,9 +82,10 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            color: #0d47a1;
         }
 
-        .title-star { color: #f72585; }
+        .title-star { color: #1e88e5; }
 
         /* Games Grid */
         .games-grid {
@@ -100,12 +101,13 @@
             padding: 10px;
             text-align: center;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            border: 1px solid #e3f2fd;
         }
 
         .game-card img {
             width: 60px;
             height: 60px;
-            border-radius: 10px;
+            border-radius: 12px;
             object-fit: cover;
             margin-bottom: 5px;
         }
@@ -114,18 +116,25 @@
             font-size: 11px;
             font-weight: 600;
             margin-bottom: 5px;
+            color: #333;
         }
 
+        /* Blue TOPUP Button */
         .btn-topup {
             width: 100%;
-            background: #FFBD35;
+            background: #1e88e5;
             color: #fff;
             border: none;
-            padding: 4px;
+            padding: 5px;
             border-radius: 20px;
             font-size: 10px;
             font-weight: 700;
             cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .btn-topup:hover {
+            background: #1565c0;
         }
 
         /* 💳 QR CODE SECTION */
@@ -136,12 +145,13 @@
             border-radius: 16px;
             text-align: center;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid #e3f2fd;
         }
 
         .qr-title {
             font-size: 15px;
             font-weight: 700;
-            color: #1a73e8;
+            color: #1e88e5;
             margin-bottom: 5px;
         }
 
@@ -159,8 +169,8 @@
         }
 
         .qr-card {
-            background: #f8f9fa;
-            border: 1px solid #e0e0e0;
+            background: #f4f8fb;
+            border: 1px solid #bbdefb;
             border-radius: 12px;
             padding: 10px;
             width: 47%;
@@ -176,7 +186,7 @@
         .qr-card-label {
             font-size: 12px;
             font-weight: bold;
-            color: #e63946;
+            color: #1565c0;
             margin-top: 5px;
         }
     </style>
@@ -206,27 +216,51 @@
         </div>
     </div>
 
-    <!-- All Games -->
+    <!-- All Games Section -->
     <div class="section-title">
         <i class="fa-solid fa-star title-star"></i> ALL GAMES
     </div>
     
     <div class="games-grid">
+        <!-- Roblox -->
         <div class="game-card">
-            <img src="https://via.placeholder.com/60/000000/fff?text=Roblox" alt="Roblox">
+            <img src="https://images.rbxcdn.com/2b033d59646b9a8964350165a25102ff.ico" alt="Roblox">
             <div class="game-name">Roblox</div>
             <button class="btn-topup">TOPUP</button>
         </div>
 
+        <!-- MLBB -->
         <div class="game-card">
-            <img src="https://via.placeholder.com/60/1a73e8/fff?text=MLBB" alt="MLBB">
+            <img src="https://play-lh.googleusercontent.com/m-7X_4_D8tA-Q_0_Yt-Y4yP85wA_N0dD3-9m1vE1R3j-F_0_3tA-Q_0" alt="MLBB" onerror="this.src='https://via.placeholder.com/60/1e88e5/fff?text=MLBB'">
             <div class="game-name">MLBB (KH)</div>
             <button class="btn-topup">TOPUP</button>
         </div>
 
+        <!-- PUBG Mobile -->
         <div class="game-card">
-            <img src="https://via.placeholder.com/60/52c41a/fff?text=PUBG" alt="PUBG">
+            <img src="https://play-lh.googleusercontent.com/JRd052qwA3A4N4w82R_03y5P0F27zJ0y9t2R5P0F" alt="PUBG" onerror="this.src='https://via.placeholder.com/60/1565c0/fff?text=PUBG'">
             <div class="game-name">PUBG</div>
+            <button class="btn-topup">TOPUP</button>
+        </div>
+
+        <!-- Honor of Kings -->
+        <div class="game-card">
+            <img src="https://play-lh.googleusercontent.com/9C0n1_4_D8tA-Q_0_Yt-Y4yP85wA_N0dD3" alt="HOK" onerror="this.src='https://via.placeholder.com/60/42a5f5/fff?text=HOK'">
+            <div class="game-name">HOK</div>
+            <button class="btn-topup">TOPUP</button>
+        </div>
+
+        <!-- Free Fire -->
+        <div class="game-card">
+            <img src="https://play-lh.googleusercontent.com/4_D8tA-Q_0_Yt-Y4yP85wA_N0dD3-9m1vE1R3j" alt="FreeFire" onerror="this.src='https://via.placeholder.com/60/1e88e5/fff?text=FreeFire'">
+            <div class="game-name">FreeFire</div>
+            <button class="btn-topup">TOPUP</button>
+        </div>
+
+        <!-- Zepeto -->
+        <div class="game-card">
+            <img src="https://via.placeholder.com/60/0d47a1/fff?text=Zepeto" alt="Zepeto">
+            <div class="game-name">Zepeto</div>
             <button class="btn-topup">TOPUP</button>
         </div>
     </div>
@@ -253,6 +287,7 @@
 
 </body>
 </html>
+
 
 
 
