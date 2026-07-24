@@ -286,7 +286,283 @@
     </div>
 
 </body>
-</html
+</htm
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KITTY BLUE TOP UP - Premium Game Store</title>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', 'Kantumruy Pro', sans-serif;
+        }
+
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            padding-bottom: 30px;
+        }
+
+        /* Navbar */
+        header {
+            background: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 18px;
+            box-shadow: 0 2px 8px rgba(160, 200, 235, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-text {
+            font-size: 16px;
+            font-weight: 700;
+            color: #5c9ece;
+        }
+
+        .logo-subtext {
+            font-size: 10px;
+            color: #88b0d3;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .header-icons {
+            display: flex;
+            gap: 15px;
+            color: #5c9ece;
+            font-size: 16px;
+        }
+
+        /* Banner Slider Area */
+        .banner-slider {
+            width: 100%;
+            margin: 12px 0;
+            padding: 0 15px;
+        }
+
+        .banner-content {
+            background: linear-gradient(135deg, #aed9e0, #87ceeb, #5c9ece);
+            border-radius: 16px;
+            height: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 4px 12px rgba(135, 206, 235, 0.3);
+            position: relative;
+        }
+
+        /* Common Section Title */
+        .section-title {
+            padding: 10px 15px;
+            font-size: 14px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #3b7ca8;
+        }
+
+        .title-star {
+            color: #87ceeb;
+        }
+
+        /* Games Grid */
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            padding: 0 15px 15px 15px;
+        }
+
+        .game-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(160, 200, 235, 0.15);
+            border: 1px solid #e1f0fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+
+        .game-card img {
+            width: 65px;
+            height: 65px;
+            border-radius: 14px;
+            object-fit: cover;
+            margin-bottom: 6px;
+        }
+
+        .game-name {
+            font-size: 11px;
+            font-weight: 600;
+            color: #4a6fa5;
+            margin-bottom: 6px;
+        }
+
+        /* Soft Blue Button */
+        .btn-topup {
+            width: 100%;
+            background: #7bb5e3;
+            color: #fff;
+            border: none;
+            padding: 5px;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .btn-topup:hover {
+            background: #5c9ece;
+        }
+
+        /* QR Code Payment Section */
+        .qr-section {
+            margin: 15px;
+            padding: 18px;
+            background: white;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(160, 200, 235, 0.15);
+            border: 1px solid #e1f0fa;
+        }
+
+        .qr-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #3b7ca8;
+            margin-bottom: 4px;
+        }
+
+        .qr-sub {
+            font-size: 12px;
+            color: #779ecb;
+            margin-bottom: 15px;
+        }
+
+        .qr-container {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .qr-card {
+            background: #f4f9fc;
+            border: 1px solid #c8e2f5;
+            border-radius: 14px;
+            padding: 10px;
+            width: 47%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .qr-card img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: contain;
+        }
+
+        .qr-card-label {
+            font-size: 11px;
+            font-weight: bold;
+            color: #3b7ca8;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div>
+            <div class="logo-text">🐱 KITTY BLUE TOP UP</div>
+            <div class="logo-subtext">PREMIUM GAME STORE</div>
+        </div>
+        <div class="header-icons">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Banner Slider -->
+    <div class="banner-slider">
+        <div class="banner-content">
+            <div style="text-align: center;">
+                <p>🎀 KITTY BLUE STORE 🎀</p>
+                <p style="font-size: 12px; font-weight: normal; margin-top: 4px;">សេវាកម្មរហ័ស ទាន់ចិត្ត ទំនុកចិត្ត ១០០%</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- All Games Section -->
+    <div class="section-title">
+        <i class="fa-solid fa-star title-star"></i> ALL GAMES
+    </div>
+    
+    <div class="games-grid">
+        <!-- Roblox -->
+        <div class="game-card">
+            <img src="roblox.png" alt="Roblox" onerror="this.src='https://via.placeholder.com/65/87ceeb/fff?text=Roblox'">
+            <div class="game-name">Roblox</div>
+            <button class="btn-topup">TOPUP</button>
+        </div>
+
+        <!-- MLBB (KH) -->
+        <div class="game-card">
+            <img src="mlbb.png" alt="MLBB" onerror="this.src='https://via.placeholder.com/65/87ceeb/fff?text=MLBB'">
+            <div class="game-name">MLBB (KH)</div>
+            <button class="btn-topup">TOPUP</button>
+        </div>
+
+        <!-- Free Fire -->
+        <div class="game-card">
+            <img src="freefire.png" alt="Free Fire" onerror="this.src='https://via.placeholder.com/65/87ceeb/fff?text=FreeFire'">
+            <div class="game-name">FreeFire</div>
+            <button class="btn-topup">TOPUP</button>
+        </div>
+    </div>
+
+    <!-- 💳 KHQR PAYMENT SECTION -->
+    <div class="qr-section">
+        <div class="qr-title">💳 វិធីសាស្ត្រទូទាត់ប្រាក់ (KHQR)</div>
+        <div class="qr-sub">គណនី៖ <b>Phan duong</b> (TrueMoney KHQR)</div>
+        
+        <div class="qr-container">
+            <!-- QR USD -->
+            <div class="qr-card">
+                <img src="qr-usd.png" alt="TrueMoney USD KHQR" onerror="this.src='https://via.placeholder.com/150/87ceeb/fff?text=QR+USD'">
+                <div class="qr-card-label">💵 ប្រាក់ដុល្លារ ($ USD)</div>
+            </div>
+
+            <!-- QR KHR -->
+            <div class="qr-card">
+                <img src="qr-khr.png" alt="TrueMoney KHR KHQR" onerror="this.src='https://via.placeholder.com/150/87ceeb/fff?text=QR+KHR'">
+                <div class="qr-card-label">៛ ប្រាក់រៀល (៛ KHR)</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
 
 
 
