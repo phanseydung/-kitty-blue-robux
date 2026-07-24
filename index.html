@@ -17,301 +17,12 @@
         }
 
         body {
-            background-color: #f0f4f9;
-            color: #333;
-            padding-bottom: 30px;
-        }
-
-        /* Navbar */
-        header {
-            background: #ffffff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 15px;
-            box-shadow: 0 1px 5px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo-text {
-            font-size: 16px;
-            font-weight: 700;
-            color: #1e88e5;
-        }
-
-        .logo-subtext {
-            font-size: 10px;
-            color: #777;
-            text-transform: uppercase;
-        }
-
-        .header-icons {
-            display: flex;
-            gap: 15px;
-            color: #1e88e5;
-            font-size: 16px;
-        }
-
-        /* Banner (Blue Theme) */
-        .banner-slider {
-            width: 100%;
-            margin: 10px 0;
-            padding: 0 15px;
-        }
-
-        .banner-content {
-            background: linear-gradient(135deg, #0d47a1, #1e88e5, #42a5f5);
-            border-radius: 12px;
-            height: 140px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            box-shadow: 0 2px 10px rgba(30, 136, 229, 0.2);
-        }
-
-        /* Section Title */
-        .section-title {
-            padding: 10px 15px;
-            font-size: 14px;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: #0d47a1;
-        }
-
-        .title-star { color: #1e88e5; }
-
-        /* Games Grid */
-        .games-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            padding: 0 15px 15px 15px;
-        }
-
-        .game-card {
-            background: #fff;
-            border-radius: 12px;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            border: 1px solid #e3f2fd;
-        }
-
-        .game-card img {
-            width: 60px;
-            height: 60px;
-            border-radius: 12px;
-            object-fit: cover;
-            margin-bottom: 5px;
-        }
-
-        .game-name {
-            font-size: 11px;
-            font-weight: 600;
-            margin-bottom: 5px;
-            color: #333;
-        }
-
-        /* Blue TOPUP Button */
-        .btn-topup {
-            width: 100%;
-            background: #1e88e5;
-            color: #fff;
-            border: none;
-            padding: 5px;
-            border-radius: 20px;
-            font-size: 10px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-
-        .btn-topup:hover {
-            background: #1565c0;
-        }
-
-        /* 💳 QR CODE SECTION */
-        .qr-section {
-            margin: 15px;
-            padding: 15px;
-            background: white;
-            border-radius: 16px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            border: 1px solid #e3f2fd;
-        }
-
-        .qr-title {
-            font-size: 15px;
-            font-weight: 700;
-            color: #1e88e5;
-            margin-bottom: 5px;
-        }
-
-        .qr-sub {
-            font-size: 12px;
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        .qr-container {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .qr-card {
-            background: #f4f8fb;
-            border: 1px solid #bbdefb;
-            border-radius: 12px;
-            padding: 10px;
-            width: 47%;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
-        }
-
-        .qr-card img {
-            width: 100%;
-            border-radius: 8px;
-            object-fit: contain;
-        }
-
-        .qr-card-label {
-            font-size: 12px;
-            font-weight: bold;
-            color: #1565c0;
-            margin-top: 5px;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Header -->
-    <header>
-        <div>
-            <div class="logo-text">🐱 KITTY BLUE TOP UP</div>
-            <div class="logo-subtext">PREMIUM GAME STORE</div>
-        </div>
-        <div class="header-icons">
-            <i class="fa-solid fa-moon"></i>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </header>
-
-    <!-- Banner -->
-    <div class="banner-slider">
-        <div class="banner-content">
-            <div style="text-align: center;">
-                <p>🐱 KITTY BLUE TOP UP</p>
-                <p style="font-size: 12px; font-weight: normal;">សេវាកម្មរហ័ស ទាន់ចិត្ត ទំនុកចិត្ត ១០០%</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- All Games Section -->
-    <div class="section-title">
-        <i class="fa-solid fa-star title-star"></i> ALL GAMES
-    </div>
-    
-    <div class="games-grid">
-        <!-- Roblox -->
-        <div class="game-card">
-            <img src="https://images.rbxcdn.com/2b033d59646b9a8964350165a25102ff.ico" alt="Roblox">
-            <div class="game-name">Roblox</div>
-            <button class="btn-topup">TOPUP</button>
-        </div>
-
-        <!-- MLBB -->
-        <div class="game-card">
-            <img src="https://play-lh.googleusercontent.com/m-7X_4_D8tA-Q_0_Yt-Y4yP85wA_N0dD3-9m1vE1R3j-F_0_3tA-Q_0" alt="MLBB" onerror="this.src='https://via.placeholder.com/60/1e88e5/fff?text=MLBB'">
-            <div class="game-name">MLBB (KH)</div>
-            <button class="btn-topup">TOPUP</button>
-        </div>
-
-        <!-- PUBG Mobile -->
-        <div class="game-card">
-            <img src="https://play-lh.googleusercontent.com/JRd052qwA3A4N4w82R_03y5P0F27zJ0y9t2R5P0F" alt="PUBG" onerror="this.src='https://via.placeholder.com/60/1565c0/fff?text=PUBG'">
-            <div class="game-name">PUBG</div>
-            <button class="btn-topup">TOPUP</button>
-        </div>
-
-        <!-- Honor of Kings -->
-        <div class="game-card">
-            <img src="https://play-lh.googleusercontent.com/9C0n1_4_D8tA-Q_0_Yt-Y4yP85wA_N0dD3" alt="HOK" onerror="this.src='https://via.placeholder.com/60/42a5f5/fff?text=HOK'">
-            <div class="game-name">HOK</div>
-            <button class="btn-topup">TOPUP</button>
-        </div>
-
-        <!-- Free Fire -->
-        <div class="game-card">
-            <img src="https://play-lh.googleusercontent.com/4_D8tA-Q_0_Yt-Y4yP85wA_N0dD3-9m1vE1R3j" alt="FreeFire" onerror="this.src='https://via.placeholder.com/60/1e88e5/fff?text=FreeFire'">
-            <div class="game-name">FreeFire</div>
-            <button class="btn-topup">TOPUP</button>
-        </div>
-
-        <!-- Zepeto -->
-        <div class="game-card">
-            <img src="https://via.placeholder.com/60/0d47a1/fff?text=Zepeto" alt="Zepeto">
-            <div class="game-name">Zepeto</div>
-            <button class="btn-topup">TOPUP</button>
-        </div>
-    </div>
-
-    <!-- 💳 KHQR PAYMENT SECTION -->
-    <div class="qr-section">
-        <div class="qr-title">💳 វិធីសាស្ត្រទូទាត់ប្រាក់ (KHQR)</div>
-        <div class="qr-sub">គណនី៖ <b>Phan duong</b> (TrueMoney KHQR)</div>
-        
-        <div class="qr-container">
-            <!-- QR USD -->
-            <div class="qr-card">
-                <img src="qr-usd.png" alt="TrueMoney USD KHQR">
-                <div class="qr-card-label">💵 ប្រាក់ដុល្លារ ($ USD)</div>
-            </div>
-
-            <!-- QR KHR -->
-            <div class="qr-card">
-                <img src="qr-khr.png" alt="TrueMoney KHR KHQR">
-                <div class="qr-card-label">៛ ប្រាក់រៀល (៛ KHR)</div>
-            </div>
-        </div>
-    </div>
-
-</body>
-</htm
-<!DOCTYPE html>
-<html lang="km">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KITTY BLUE TOP UP - Premium Game Store</title>
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Icon -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', 'Kantumruy Pro', sans-serif;
-        }
-
-        body {
             background-color: #f0f8ff;
             color: #333;
             padding-bottom: 30px;
         }
 
-        /* Navbar */
+        /* Header */
         header {
             background: #ffffff;
             display: flex;
@@ -334,7 +45,6 @@
             font-size: 10px;
             color: #88b0d3;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
         .header-icons {
@@ -344,7 +54,7 @@
             font-size: 16px;
         }
 
-        /* Banner Slider Area */
+        /* Banner */
         .banner-slider {
             width: 100%;
             margin: 12px 0;
@@ -362,10 +72,9 @@
             font-weight: bold;
             font-size: 18px;
             box-shadow: 0 4px 12px rgba(135, 206, 235, 0.3);
-            position: relative;
         }
 
-        /* Common Section Title */
+        /* Section Title */
         .section-title {
             padding: 10px 15px;
             font-size: 14px;
@@ -376,9 +85,7 @@
             color: #3b7ca8;
         }
 
-        .title-star {
-            color: #87ceeb;
-        }
+        .title-star { color: #87ceeb; }
 
         /* Games Grid */
         .games-grid {
@@ -398,7 +105,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            transition: transform 0.2s;
         }
 
         .game-card img {
@@ -416,7 +122,6 @@
             margin-bottom: 6px;
         }
 
-        /* Soft Blue Button */
         .btn-topup {
             width: 100%;
             background: #7bb5e3;
@@ -427,14 +132,9 @@
             font-size: 10px;
             font-weight: 700;
             cursor: pointer;
-            transition: 0.2s;
         }
 
-        .btn-topup:hover {
-            background: #5c9ece;
-        }
-
-        /* QR Code Payment Section */
+        /* QR Section */
         .qr-section {
             margin: 15px;
             padding: 18px;
@@ -471,7 +171,6 @@
             border-radius: 14px;
             padding: 10px;
             width: 47%;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
         }
 
         .qr-card img {
@@ -503,7 +202,7 @@
         </div>
     </header>
 
-    <!-- Banner Slider -->
+    <!-- Banner -->
     <div class="banner-slider">
         <div class="banner-content">
             <div style="text-align: center;">
@@ -513,7 +212,7 @@
         </div>
     </div>
 
-    <!-- All Games Section -->
+    <!-- All Games -->
     <div class="section-title">
         <i class="fa-solid fa-star title-star"></i> ALL GAMES
     </div>
@@ -521,21 +220,21 @@
     <div class="games-grid">
         <!-- Roblox -->
         <div class="game-card">
-            <img src="roblox.png" alt="Roblox" onerror="this.src='https://via.placeholder.com/65/87ceeb/fff?text=Roblox'">
+            <img src="https://images.rbxcdn.com/2b033d59646b9a8964350165a25102ff.ico" alt="Roblox">
             <div class="game-name">Roblox</div>
             <button class="btn-topup">TOPUP</button>
         </div>
 
-        <!-- MLBB (KH) -->
+        <!-- MLBB -->
         <div class="game-card">
-            <img src="mlbb.png" alt="MLBB" onerror="this.src='https://via.placeholder.com/65/87ceeb/fff?text=MLBB'">
+            <img src="https://play-lh.googleusercontent.com/382k9eAio7R4-C38sB_7x8t5g" alt="MLBB" onerror="this.src='https://via.placeholder.com/65/87ceeb/fff?text=MLBB'">
             <div class="game-name">MLBB (KH)</div>
             <button class="btn-topup">TOPUP</button>
         </div>
 
         <!-- Free Fire -->
         <div class="game-card">
-            <img src="freefire.png" alt="Free Fire" onerror="this.src='https://via.placeholder.com/65/87ceeb/fff?text=FreeFire'">
+            <img src="https://play-lh.googleusercontent.com/4_D8tA-Q_0_Yt-Y4yP85wA_N0dD3" alt="Free Fire" onerror="this.src='https://via.placeholder.com/65/87ceeb/fff?text=FreeFire'">
             <div class="game-name">FreeFire</div>
             <button class="btn-topup">TOPUP</button>
         </div>
@@ -547,15 +246,13 @@
         <div class="qr-sub">គណនី៖ <b>Phan duong</b> (TrueMoney KHQR)</div>
         
         <div class="qr-container">
-            <!-- QR USD -->
             <div class="qr-card">
-                <img src="qr-usd.png" alt="TrueMoney USD KHQR" onerror="this.src='https://via.placeholder.com/150/87ceeb/fff?text=QR+USD'">
+                <img src="https://via.placeholder.com/150/87ceeb/ffffff?text=TrueMoney+USD" alt="USD QR">
                 <div class="qr-card-label">💵 ប្រាក់ដុល្លារ ($ USD)</div>
             </div>
 
-            <!-- QR KHR -->
             <div class="qr-card">
-                <img src="qr-khr.png" alt="TrueMoney KHR KHQR" onerror="this.src='https://via.placeholder.com/150/87ceeb/fff?text=QR+KHR'">
+                <img src="https://via.placeholder.com/150/87ceeb/ffffff?text=TrueMoney+KHR" alt="KHR QR">
                 <div class="qr-card-label">៛ ប្រាក់រៀល (៛ KHR)</div>
             </div>
         </div>
@@ -563,7 +260,3 @@
 
 </body>
 </html
-
-
-
-
