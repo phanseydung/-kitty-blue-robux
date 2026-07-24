@@ -3,57 +3,449 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kitty Blue Robux</title>
+    <title>KITTY BLUE TOP UP</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #eef2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+        * {
+            box-sizing: border-box;
             margin: 0;
+            padding: 0;
+            font-family: 'Kantumruy Pro', system-ui, -apple-system, sans-serif;
         }
-        .card {
-            background: white;
-            padding: 30px;
+
+        body {
+            background-color: #f0f4f9;
+            color: #333;
+            padding-bottom: 40px;
+        }
+
+        /* 1. Header */
+        header {
+            background: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            font-size: 20px;
+            color: #1a73e8;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #444;
+            margin: 0 10px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        nav a.active {
+            background: #1a73e8;
+            color: white;
+            padding: 6px 16px;
             border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            text-align: center;
-            max-width: 350px;
-            width: 85%;
         }
-        h1 {
-            color: Link1e88e5;
-            font-size: 24px;
-            margin-bottom: 10px;
+
+        .header-btns {
+            display: flex;
+            gap: 10px;
+            align-items: center;
         }
-        p {
-            color: Link555;
-            font-size: 15px;
-            line-height: 1.6;
+
+        .btn-login {
+            background: #1a73e8;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
         }
-        .btn {
+
+        /* Container Layout */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 20px;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* 2. Banner Section */
+        .banner {
+            background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
+            border-radius: 16px;
+            padding: 40px 30px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .banner h1 {
+            font-size: 32px;
+            color: #4cc9f0;
+            margin-bottom: 5px;
+        }
+
+        .banner .subtitle {
+            background: #f72585;
             display: inline-block;
-            margin-top: 15px;
-            padding: 12px 25px;
-            background-color: Link1e88e5;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .banner-features {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .feature-badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            backdrop-filter: blur(5px);
+        }
+
+        /* 3. Games Section */
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 25px 0 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 12px;
+        }
+
+        .game-card {
+            background: white;
+            border-radius: 12px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .game-card img {
+            width: 100%;
+            border-radius: 8px;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+
+        .game-card span {
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 6px;
+            display: block;
+        }
+
+        /* 4. Price Tables */
+        .price-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .price-card {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .price-card h4 {
+            color: #1a73e8;
+            margin-bottom: 10px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            padding: 6px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .price-khr {
+            color: #e63946;
+            font-weight: bold;
+        }
+
+        .btn-more {
+            width: 100%;
+            background: #e8f0fe;
+            color: #1a73e8;
+            border: none;
+            padding: 6px;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Right Sidebar Controls */
+        .sidebar-box {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1a73e8;
+        }
+
+        .news-item {
+            font-size: 12px;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .badge-new {
+            background: #ff4d4f;
+            color: white;
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .payment-methods {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            text-align: center;
+        }
+
+        .pay-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 12px;
+        }
+
+        .contact-box {
+            background: #0052cc;
+            color: white;
+            border-radius: 12px;
+            padding: 15px;
+        }
+
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 12px;
+            border-radius: 8px;
             color: white;
             text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
+            margin-top: 8px;
+            font-size: 13px;
         }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h1>🐱 Kitty Blue Robux</h1>
-        <p>ស្វាគមន៍មកកាន់គេហទំព័រផ្លូវការ! នេះជាវេបសាយដំបូងដែលខ្ញុំបានបង្កើតឡើង។</p>
-        <a href="https://t.me/ឈ្មោះ Telegram អ្នក" class="btn">ចុចទីនេះ</a>
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo">
+            🐱 KITTY BLUE TOP UP
+        </div>
+        <nav>
+            <a href="#" class="active">ទំព័រដើម</a>
+            <a href="#">ហ្គេម</a>
+            <a href="#">តារាងតម្លៃ</a>
+            <a href="#">របៀបទិញ</a>
+            <a href="#">ទំនាក់ទំនង</a>
+        </nav>
+        <div class="header-btns">
+            <button class="btn-login"><i class="fa-solid fa-user"></i> ចូលគណនី</button>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        
+        <!-- Left Main Area -->
+        <main>
+            <!-- Banner Top -->
+            <div class="banner">
+                <span class="subtitle">FAST • SAFE • TRUSTED • 24/7</span>
+                <h1>KITTY BLUE TOP UP</h1>
+                <p>បញ្ចូលលុយហ្គេមកាន់តែងាយស្រួល និងមានតម្លៃសមរម្យបំផុត!</p>
+                
+                <div class="banner-features">
+                    <div class="feature-badge">⚡ បញ្ចូលរហ័ស</div>
+                    <div class="feature-badge">🛡️ សុវត្ថិភាព ១០០%</div>
+                    <div class="feature-badge">🎧 សេវាកម្ម ២៤/៧</div>
+                </div>
+            </div>
+
+            <!-- Popular Games Section -->
+            <div class="section-title">
+                <span>🔥 ហ្គេមពេញនិយម</span>
+                <a href="#" style="font-size: 12px; color: #1a73e8; text-decoration: none;">មើលទាំងអស់ ></a>
+            </div>
+
+            <div class="game-grid">
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/100/000000/FFFFFF?text=Roblox" alt="Roblox">
+                    <span>Roblox</span>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/100/ff4d4f/FFFFFF?text=FreeFire" alt="Free Fire">
+                    <span>Free Fire</span>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/100/1890ff/FFFFFF?text=MLBB" alt="MLBB">
+                    <span>Mobile Legends</span>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/100/52c41a/FFFFFF?text=PUBG" alt="PUBG">
+                    <span>PUBG Mobile</span>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/100/faad14/FFFFFF?text=HOK" alt="HOK">
+                    <span>Honor of Kings</span>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/100/722ed1/FFFFFF?text=Genshin" alt="Genshin">
+                    <span>Genshin Impact</span>
+                </div>
+            </div>
+
+            <!-- Price Tables Section -->
+            <div class="section-title">
+                <span>💎 តារាងតម្លៃ (ប៉ាន់ស្មាន)</span>
+            </div>
+
+            <div class="price-grid">
+                <!-- Roblox Card -->
+                <div class="price-card">
+                    <h4><i class="fa-solid fa-cube"></i> Roblox (Robux)</h4>
+                    <div class="price-row">
+                        <span>80 Robux</span>
+                        <span class="price-khr">$0.99 (4,100៛)</span>
+                    </div>
+                    <div class="price-row">
+                        <span>400 Robux</span>
+                        <span class="price-khr">$4.99 (20,500៛)</span>
+                    </div>
+                    <div class="price-row">
+                        <span>800 Robux</span>
+                        <span class="price-khr">$9.99 (41,000៛)</span>
+                    </div>
+                    <button class="btn-more">មើលបន្ថែម</button>
+                </div>
+
+                <!-- Free Fire Card -->
+                <div class="price-card">
+                    <h4><i class="fa-solid fa-gem"></i> Free Fire (Diamonds)</h4>
+                    <div class="price-row">
+                        <span>100 Diamonds</span>
+                        <span class="price-khr">$0.99 (4,100៛)</span>
+                    </div>
+                    <div class="price-row">
+                        <span>310 Diamonds</span>
+                        <span class="price-khr">$2.99 (12,300៛)</span>
+                    </div>
+                    <div class="price-row">
+                        <span>520 Diamonds</span>
+                        <span class="price-khr">$4.99 (20,500៛)</span>
+                    </div>
+                    <button class="btn-more">មើលបន្ថែម</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside>
+            <!-- News Section -->
+            <div class="sidebar-box">
+                <div class="sidebar-title">📢 ព័ត៌មានប្រកាស</div>
+                <div class="news-item">
+                    <span><span class="badge-new">NEW</span> បញ្ចុះតម្លៃ 5% Roblox</span>
+                </div>
+                <div class="news-item">
+                    <span><span class="badge-new">HOT</span> បញ្ចុះតម្លៃ 3% Free Fire</span>
+                </div>
+            </div>
+
+            <!-- Payment Methods -->
+            <div class="sidebar-box">
+                <div class="sidebar-title">💳 វិធីទូទាត់</div>
+                <div class="payment-methods">
+                    <div class="pay-card">
+                        <strong>ABA Bank</strong>
+                        <p style="font-size: 10px; color: #666;">000 123 456</p>
+                    </div>
+                    <div class="pay-card">
+                        <strong>TrueMoney</strong>
+                        <p style="font-size: 10px; color: #666;">088 123 4567</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Box -->
+            <div class="contact-box">
+                <h3>📞 ទំនាក់ទំនងយើង</h3>
+                <a href="https://t.me/yourusername" class="contact-btn">
+                    <i class="fa-brands fa-telegram"></i> Telegram
+                </a>
+                <a href="#" class="contact-btn">
+                    <i class="fa-brands fa-facebook"></i> Facebook Page
+                </a>
+            </div>
+        </aside>
 
     </div>
 
 </body>
 </html>
+
 
